@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .container {
+            width: 50vw;
+            height: 50vh;
+            background-color: rgb(31, 188, 177);
+
+        }
+        .box {
+            width: 30px;
+            height: 30px;
+            animation-name: ronaldo,harry2;
+            animation-duration: 5s;
+            animation-delay: 0s;
+            animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+            animation-iteration-count: infinite;
+        
+
+        
+
+        }
+
+        @keyframes ronaldo{
+            from{
+                background-color: red;
+            }
+            to{
+                background-color: yellow; 
+            }
+        }
+        @keyframes harry2 {
+            0%{
+                transform: rotate(100deg);
+            }
+            20%{
+                transform: rotate(200deg);
+            }
+            50%{
+                transform: rotate(220deg);
+            }
+            80%{
+                transform: rotate(300deg);
+            }
+            100%{
+                transform: rotate(310deg);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+    
+    
+</body>
+</html>

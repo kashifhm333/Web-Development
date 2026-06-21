@@ -1,0 +1,7 @@
+div {
+    /* display: flex; */
+    width: 400px;
+    height: 500px;
+    background-color: #5f0f0f;
+    color: white;
+}

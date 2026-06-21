@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        /* 1. Default Mobile Styles */
+        .container {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .card {
+            background: coral;
+            width: 100%;
+            /* Full width on mobile */
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* 2. Tablet Styles (768px and up) */
+        @media screen and (min-width: 768px) {
+            .card {
+                background: lightseagreen;
+                width: 50%;
+                /* Half width on tablets */
+            }
+        }
+
+        /* 3. Desktop Styles (1024px and up) */
+        @media screen and (min-width: 1024px) {
+            .card {
+                background: mediumpurple;
+                width: 30%;
+                /* Narrower on big screens */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Hello World</h1>
+            <p>Resize the window to see me change!</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

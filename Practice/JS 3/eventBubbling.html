@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: lightblue;
+            padding: 20px;
+        }
+
+        .child {
+            background-color: rgb(9, 55, 9);
+            padding: 20px;
+        }
+
+        .itschild {
+            background-color: lightcoral;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="child">
+            <div class="itschild">
+                ronaldo is the best player in the world.
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        let con = document.querySelector(".container");
+        con.addEventListener("click", function (e) {
+            e.stopPropagation();
+            con.style.backgroundColor = "red";
+
+        })
+
+
+        let child = document.querySelector(".child");
+        child.addEventListener("click", function (e) {
+            e.stopPropagation();
+            setInterval(()=>{
+                child.style.backgroundColor = "yellow";
+            }, 2000);
+        })
+
+
+        let itschild = document.querySelector(".itschild");
+        itschild.addEventListener("click", (e) => {
+            e.stopPropagation();
+            setTimeout(function () {
+                itschild.style.backgroundColor = "green";
+                itschild.style.fonfamily = "cursive";
+                itschild.style.fontSize = "30px";
+            }, 1000);
+        })
+
+
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,2 @@
+CommonJS is a old module system used in Node.jsI am appending data to the fileI am appending data to the fileI am appending data to the file
+I am appending data to the fileI am appending data to the fileI am appending data to the file

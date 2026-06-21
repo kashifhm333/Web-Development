@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow and Outline</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .cr {
+            margin-top: 10px;
+            text-shadow: 2px 5px 2px red;
+            text-indent: 20px;
+        }
+
+        h2 {
+            border: 3px solid black;
+            display: inline-block;
+            box-shadow: 5px 10px 8px grey;
+        }
+
+        .element {
+            margin-top: 20px;
+            border: 2px solid green;
+            /* Inside */
+            outline: 2px solid black;
+            /* Outside */
+            outline-offset: 5px;
+            /* Distance */
+            border-radius: 5px;
+            /* Curves both */
+        }
+
+        .ronaldo{
+            margin-top: 45px;
+            border: 2px dashed blue;
+            outline: 5px dotted orange;
+            outline-offset: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>
+        Cristiano Ronaldo
+    </h2>
+    <p class="cr">
+        Ronaldo is the best player in the world.
+    </p>
+    <p class="element">
+        He has won 5 Ballon d'Or awards.
+    </p>
+    
+
+    <p class="ronaldo">
+        Shahrukh khan is the king of bollywood
+    </p>
+
+</body>
+
+</html>

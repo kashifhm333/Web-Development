@@ -1,0 +1,1 @@
+I am form commonjs in a sync way

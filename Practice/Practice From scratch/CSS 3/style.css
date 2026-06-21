@@ -1,0 +1,82 @@
+.header {
+    display: grid;
+    grid-template-columns: 700px 300px;
+    grid-template-rows: 300px;
+    justify-content: space-between;
+    /* column-gap: 400px; */
+
+
+}
+
+.disc{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    
+    
+}
+
+.image{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    background-image: url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+/* Apply styles if screen is between 600px and 900px */
+/* @media screen and (min-width: 600px) and (max-width: 650px) {
+  body { background-color: lightblue; }
+  .header{
+    display: inline;
+  }
+}
+
+
+@media screen and (min-width:200px) and (max-width: 500px) {
+    body { background-color: rgb(181, 27, 66); }
+    .header{
+        margin: 200px;
+    }
+} */
+
+/* Apply styles if screen is between 600px and 900px */
+/* @media screen and (500px <= width <= 1000px) {
+  body { background-color: rgb(13, 48, 225); }
+  
+} */
+
+
+/* 
+@media (prefers-color-scheme: dark) {
+  body { background: #e71111; color: white; }
+}
+
+
+@media (hover: hover) {
+  button:hover { background: gold; }
+} */
+
+
+
+ /* .box {
+  width: 100px;
+  height: 100px;
+  background: coral;
+  transition: transform 0.3s ease; 
+  
+}  */
+
+/* .box:hover {
+  
+  transform: translate(20px, 0) rotate(15deg) scale(1.1);
+} */
+
+
+.box {
+  background: blue;
+  transition: background 0.5s ease-in-out; /* "Watch the background" */
+}
+
+.box:hover {
+  background: red; /* Now this fades slowly over 0.5s */
+}
